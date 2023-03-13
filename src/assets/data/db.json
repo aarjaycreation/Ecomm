@@ -1,0 +1,51 @@
+{
+    "posts": [
+      { 
+        "id": 1, 
+        "name": "headphone-1", 
+        "category_id": 1, 
+        "description": "Headphone description",
+        "price":1500,
+        "is_available": true,
+        "rating":3,
+        "reviewers":120,
+        "vendor_name": "seller-1",
+        "warranty":2
+      },
+      { 
+        "id": 2, 
+        "name": "headphone-2", 
+        "category_id": 2, 
+        "description": "Headphone description",
+        "price":1100,
+        "is_available": true,
+        "rating":4,
+        "reviewers":70,
+        "vendor_name": "seller-3",
+        "warranty":1
+      }
+    ],
+    "categories": [
+      {
+        "id":1,
+        "name": "All"
+      },
+      {
+        "id":2,
+        "name": "Mobile"
+      },
+      {
+        "id":3,
+        "name": "Tablets"
+      },
+      {
+        "id":4,
+        "name": "Electronics"
+      }
+
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
