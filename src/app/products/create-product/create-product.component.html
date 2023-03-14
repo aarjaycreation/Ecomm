@@ -1,1 +1,45 @@
-<p>create-product works!</p>
+<h2>Create Product</h2>
+<form (submit)="addnewproduct(addproductfrom)" #addproductfrom="ngForm">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <input type="text" hidden name="ProductID" id="ProductID" ngModel>
+                <input type="text" class="form-control" placeholder="name" aria-label="name" name="name" [(ngModel)]="name">
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example" name="category" [(ngModel)]="category">
+                    <option selected value="0">Categories</option>
+                    <ng-container *ngFor="let item of categoryList">
+                        <option value="{{item.id}}">{{item.name}}</option>
+                    </ng-container>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="is_available" aria-label="is_available" name="is_available" [(ngModel)]="is_available">
+            </div>
+            <select class="form-select" aria-label="Default select example" name="rating" [(ngModel)]="rating">
+                <option selected value="0">Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="description" aria-label="description" name="description" [(ngModel)]="description">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="price" aria-label="price" name="price" [(ngModel)]="price">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="vendor_name" aria-label="vendor_name" name="vendor_name" [(ngModel)]="vendor_name">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-primary" type="submit">submit</button>
+        </div>
+       
+    </div>
+</form>

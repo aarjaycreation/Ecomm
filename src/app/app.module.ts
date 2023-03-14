@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
-
+//import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 // custom made module
 import { OrdersModule } from './orders/orders.module';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
@@ -17,7 +17,7 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    FormsModule,
     OrdersModule,
     SiteFrameworkModule
   ],

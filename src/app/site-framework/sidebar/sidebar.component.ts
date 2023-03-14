@@ -8,13 +8,11 @@ import { category } from '../category'
 })
 export class SidebarComponent implements OnInit {
 
-  categoryList: category | undefined ;
+  categoryList: category | any ;
   constructor(private productService: ProductsService){}
   ngOnInit(): void {
     this.productService.getcategory().subscribe( data => {
     this.categoryList = data;
-
-    console.log(this.categoryList)
     });
   }
 

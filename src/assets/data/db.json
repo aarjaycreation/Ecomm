@@ -1,51 +1,108 @@
 {
-    "posts": [
-      { 
-        "id": 1, 
-        "name": "headphone-1", 
-        "category_id": 1, 
-        "description": "Headphone description",
-        "price":1500,
-        "is_available": true,
-        "rating":3,
-        "reviewers":120,
-        "vendor_name": "seller-1",
-        "warranty":2
-      },
-      { 
-        "id": 2, 
-        "name": "headphone-2", 
-        "category_id": 2, 
-        "description": "Headphone description",
-        "price":1100,
-        "is_available": true,
-        "rating":4,
-        "reviewers":70,
-        "vendor_name": "seller-3",
-        "warranty":1
-      }
-    ],
-    "categories": [
-      {
-        "id":1,
-        "name": "All"
-      },
-      {
-        "id":2,
-        "name": "Mobile"
-      },
-      {
-        "id":3,
-        "name": "Tablets"
-      },
-      {
-        "id":4,
-        "name": "Electronics"
-      }
-
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "name": "mobile-1",
+      "category_id": 2,
+      "description": "mobile description",
+      "price": 1500,
+      "is_available": true,
+      "rating": 3,
+      "reviewers": 120,
+      "vendor_name": "seller-1",
+      "warranty": 2
+    },
+    {
+      "id": 2,
+      "name": "mobile-2",
+      "category_id": 2,
+      "description": "mobile description",
+      "price": 1100,
+      "is_available": true,
+      "rating": 4,
+      "reviewers": 70,
+      "vendor_name": "seller-3",
+      "warranty": 1
+    },
+    {
+      "id": 3,
+      "name": "Tablet-1",
+      "category_id": 3,
+      "description": "Tablets description",
+      "price": 1100,
+      "is_available": true,
+      "rating": 4,
+      "reviewers": 70,
+      "vendor_name": "seller-3",
+      "warranty": 1
+    },
+    {
+      "id": 4,
+      "name": "Tablet-2",
+      "category_id": 3,
+      "description": "Tablets description",
+      "price": 1100,
+      "is_available": true,
+      "rating": 4,
+      "reviewers": 70,
+      "vendor_name": "seller-3",
+      "warranty": 1
+    },
+    {
+      "id": 5,
+      "name": "Electronic-2",
+      "category_id": 4,
+      "description": "Electronic description",
+      "price": 1100,
+      "is_available": true,
+      "rating": 4,
+      "reviewers": 70,
+      "vendor_name": "seller-3",
+      "warranty": 1
+    },
+    {
+      "id": 10,
+      "category_id": "2",
+      "name": "Electronic-3",
+      "is_available": true,
+      "rating": "2",
+      "description": "Electronic3 description",
+      "price": 1700,
+      "vendor_name": "seller-4"
+    },
+    {
+      "id": 12,
+      "category_id": "2",
+      "name": "new mobile phone",
+      "is_available": "yes",
+      "rating": "4",
+      "description": "new phone description",
+      "price": 13000,
+      "vendor_name": "new vendor name phone"
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "name": "Mobile"
+    },
+    {
+      "id": 3,
+      "name": "Tablets"
+    },
+    {
+      "id": 4,
+      "name": "Electronics"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
